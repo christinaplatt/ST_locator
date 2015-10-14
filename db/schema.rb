@@ -42,8 +42,12 @@ ActiveRecord::Schema.define(version: 20151014190038) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "supervisors", force: :cascade do |t|
@@ -57,10 +61,10 @@ ActiveRecord::Schema.define(version: 20151014190038) do
     t.string   "state"
     t.string   "zipcode"
     t.string   "country"
-    t.string   "latitude"
-    t.string   "longitude"
-    t.string   "old_latitude"
-    t.string   "old_longitude"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
@@ -76,10 +80,10 @@ ActiveRecord::Schema.define(version: 20151014190038) do
     t.string   "state"
     t.string   "zipcode"
     t.string   "country"
-    t.string   "latitude"
-    t.string   "longitude"
-    t.string   "old_latitude"
-    t.string   "old_longitude"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

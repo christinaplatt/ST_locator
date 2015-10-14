@@ -11,6 +11,11 @@ class CreateSchools < ActiveRecord::Migration
 	t.string	:city
 	t.string	:state
 	t.string	:zip
+	t.float    	:latitude
+   	t.float    	:longitude
+    t.float    	:old_latitude
+    t.float    	:old_longitude
+
     t.timestamps null: false
     end
   end

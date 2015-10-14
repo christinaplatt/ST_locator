@@ -11,10 +11,10 @@ class CreateSupervisors < ActiveRecord::Migration
     	t.string	:state
     	t.string	:zipcode
     	t.string	:country
-    	t.string	:latitude
-    	t.string	:longitude
-    	t.string	:old_latitude
-    	t.string	:old_longitude
+        t.float     :latitude
+        t.float     :longitude
+        t.float     :old_latitude
+        t.float     :old_longitude
       t.timestamps null: false
     end
   end
