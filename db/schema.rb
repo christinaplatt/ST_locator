@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151013211514) do
+ActiveRecord::Schema.define(version: 20151014190038) do
 
   create_table "models", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -30,6 +30,63 @@ ActiveRecord::Schema.define(version: 20151013211514) do
 
   add_index "models", ["email"], name: "index_models_on_email", unique: true
   add_index "models", ["reset_password_token"], name: "index_models_on_reset_password_token", unique: true
+
+  create_table "schools", force: :cascade do |t|
+    t.string   "name"
+    t.string   "campus_name"
+    t.string   "admin_name"
+    t.string   "admin_phone"
+    t.string   "admin_email"
+    t.string   "schladdress1"
+    t.string   "schladdress2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "supervisors", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.string   "email"
+    t.string   "cellphone"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "country"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.string   "email"
+    t.string   "cellphone"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.string   "country"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "old_latitude"
+    t.float    "old_longitude"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",          null: false
