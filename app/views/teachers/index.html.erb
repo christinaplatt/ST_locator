@@ -1,0 +1,47 @@
+   <h1>Create an account</h1>
+<div class="form">
+  <%= form_for Teacher.new do |f| %>   
+  <%=f.label :First_name %> 
+  <div class="box"> 
+    <%=f.text_field :fname %> 
+  </div>
+  <%=f.label :Last_name %>
+  <div class="box">
+    <%=f.text_field :lname%>
+  </div>
+  <%=f.label :email %> 
+  <div class="box">  
+    <%=f.text_field :email %> 
+  </div>  
+  <%=f.label :cellphone %>
+  <div class="box">
+    <%=f.text_field :cellphone %>
+  </div>
+  <%=f.label :address_1 %>
+  <div class="box">
+    <%=f.text_field :address1 %>
+  </div>
+  <%=f.label :address_2 %>
+  <div class="box">
+    <%=f.text_field :address2 %>
+  </div>
+  <%=f.label :city %>
+  <div class="box">
+    <%=f.text_field :city %>
+  </div>
+  <%=f.label :state %>
+  <div class="box">
+    <%=f.select :state, options_for_select(us_states) %>
+  </div>
+  <%=f.label :country %>
+  <div class="box">
+    <%=f.select :country, options_for_select(us_country) %>
+  </div>
+
+
+
+  <%=f.submit :create %> 
+ <% end %>
+</div>
+
+

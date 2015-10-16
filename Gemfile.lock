@@ -198,10 +198,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-
   bootstrap-sass-rails (~> 2.2.2.0)
-  byebug
-
   cancan
   coffee-rails (~> 4.1.0)
   database_cleaner
