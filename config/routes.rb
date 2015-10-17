@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :models
+
   root 'supervisors#index'
+
+  # devise_for :models
+
+  resources :teachers
   resources :supervisors
 
   # The priority is based upon order of creation: first created -> highest priority.
