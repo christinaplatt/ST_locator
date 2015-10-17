@@ -1,12 +1,6 @@
-class ApplicationController < ActionController::Base
-
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :exception
-  helper_method :us_states
-  helper_method :us_country
-  def us_states
-  	[
+module TeachersHelper
+	def us_states
+  [
     ['AK', 'AK'],
     ['AL', 'AL'],
     ['AR', 'AR'],
@@ -60,10 +54,4 @@ class ApplicationController < ActionController::Base
     ['WY', 'WY']
   ]
 end
-def us_country
-	[
-	['US', 'US']
-	]
-	end
-
 end
