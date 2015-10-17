@@ -2,6 +2,7 @@ class SupervisorsController < ApplicationController
 	def index
 		@supervisor = Supervisor.all
 	end
+
 	def new
 		@supervisor = Supervisor.new
 	end
@@ -29,11 +30,15 @@ class SupervisorsController < ApplicationController
 		redirect_to index_home_path
 	end
 
-
 	private
 
-	def supervisor_params
+		params.require(:supervisor).permit(:fname, :lname)
+	end
+
+	def account_update_params
+		params.require(:supervisor).permit(:fname, :lname) 
 		params.require(:supervisor).permit(:fname, :lname, :email,
 			:address1, :address2, :city, :state)
+
 	end
 end
