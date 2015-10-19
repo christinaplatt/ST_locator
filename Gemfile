@@ -28,9 +28,14 @@ gem 'paperclip', '~> 4.2'
 
 gem 'bootstrap-sass-rails', "~> 2.2.2.0"
 
-
+#SUE ADD use for obtaining geocode from addresses
 gem 'geocoder'
- 
+gem 'gmaps4rails', '~> 2.1.2'
+gem 'underscore-rails'
+# use for grabbing ruby and putting into javascript
+gem 'gon'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
