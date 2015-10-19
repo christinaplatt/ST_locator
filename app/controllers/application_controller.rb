@@ -64,9 +64,6 @@ def us_country
     [
     ['US','US']
     ]
-    end
-	[
-	['US', 'US']
-	]
+   
 	end
 end
