@@ -1,4 +1,4 @@
-//= require twitter/bootstrap
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -12,7 +12,11 @@
 // about supported directives.
 //
 //= require jquery
+
+//= require bootstrap-sprockets
+
 //= require jquery.turbolinks
+
 //= require jquery_ujs
 //= require underscore
 //= require turbolinks

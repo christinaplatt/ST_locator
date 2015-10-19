@@ -66,4 +66,3 @@ def us_country
     ]
    
 	end
-end
