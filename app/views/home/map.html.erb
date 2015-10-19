@@ -1,25 +1,17 @@
-//= require twitter/bootstrap
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery.turbolinks
-//= require jquery_ujs
-//= require underscore
-//= require turbolinks
-//= require_tree .
-
+<!DOCTYPE html>
+<html>
+<head>
+<!-- load the Google Maps API -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<!-- set map priorities -->
+<script>
 // create a function to initialize the map
 function initialize() {
+
+//create a variable to hold the position for markers
+//	var myLatLng = {lat: 40.58938, lng: -74.950828};
+
+
 // create an object (mapprop) to define map properties 
   var mapProp = {
     center:new google.maps.LatLng(40.2627, -74.7983),
@@ -44,8 +36,19 @@ var marker = new google.maps.Marker({
   map: map
   });
 
-// add event listener to load the map (initialize) when page is loaded
-google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
 
 }
-});
+// add event listener to load the map (initialize) when page is loaded
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<!-- create a map container -->	
+<div id="map" style="width:500px;height:380px;"></div>
+</body>
+
+</html>
