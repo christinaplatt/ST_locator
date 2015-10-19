@@ -9,7 +9,8 @@ class SupervisorsController < ApplicationController
 	def create
 		@supervisor = Supervisor.create(supervisor_params)
 		if @supervisor.save
-			redirect_to 
+			redirect_to show_path
+		end
 	end
 	def show
 		@supervisor = Supervisor.find(supervisor_params)
@@ -31,7 +32,7 @@ class SupervisorsController < ApplicationController
 	end
 
 	private
-
+		def supervisor_params
 		params.require(:supervisor).permit(:fname, :lname)
 	end
 
