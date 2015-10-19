@@ -1,15 +1,17 @@
+<!-- <div class="row">
+  <div class="col-md-6"
    <h1>Create a Teacher account</h1>
 <div class="form">
   <%= form_for Teacher.new do |f| %>   
   <%=f.label :First_name %> 
 
   <div class="box"> 
-    <%=f.text_field :fname %> 
+    <%=f.text_field :fname, placeholder: "First Name" %> 
   </div>
   <%=f.label :Last_name %>
 
   <div class="box">
-    <%=f.text_field :lname%>
+    <%=f.text_field :lname, placeholder: "Last Name" %>
   </div>
   <%=f.label :email %> 
 
@@ -64,7 +66,8 @@
   <%=f.submit :create %> 
  <% end %>
 </div>
-
+</div>
+<div class="col-md-6">
  <h1>create a supervisor account</h1>
  <div class="form">
   <%= form_for Supervisor.new do |f| %>   
@@ -136,7 +139,10 @@
   <%=f.submit :create %> 
  <% end %>
 </div>
+</div>
+</div>
 
 
 
 
+ -->

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'supervisors#index'
+  root 'home#index'
 
   # devise_for :models
 

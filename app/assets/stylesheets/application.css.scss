@@ -1,7 +1,4 @@
-*= require twitter/bootstrap
- *= require_self
- *= require_tree .
- *= require twitter/bootstrap/responsive
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -18,5 +15,9 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'main'
+@import 'main';
 
+
+.first-slide, .second-slide, .third-slide{
+	width: 100%;
+}
