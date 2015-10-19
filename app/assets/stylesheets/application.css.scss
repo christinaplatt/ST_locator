@@ -15,5 +15,9 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'main'
+@import 'main';
 
+
+.first-slide, .second-slide, .third-slide{
+	width: 100%;
+}
