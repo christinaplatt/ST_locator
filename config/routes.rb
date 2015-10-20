@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :teachers
   resources :supervisors
+  resources :sessions
 
   get '/new' => 'home#new'
   get '/show' => 'home#show'
