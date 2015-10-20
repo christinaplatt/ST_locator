@@ -63,12 +63,12 @@ class ApplicationController < ActionController::Base
     ['WY', 'WY']
   ]
 end
-    def us_country
-        [
-            ['US','US']
-        ]
-   
-	end
+
+def us_country
+    [
+    ['US','US']
+    ]
+end
 
     private
 
