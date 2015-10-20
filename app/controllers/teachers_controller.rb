@@ -8,7 +8,12 @@ class TeachersController < ApplicationController
 	end
 	def create
 		@teacher = Teacher.create(teacher_params)
-		redirect_to show_path 
+
+		if @teacher.errors.present?
+			redirect_to edit_path(@teacher)
+		else
+			redirect_to show_path
+		end
 	end
 	def show
 		@teacher = Teacher.find(teacher_params)

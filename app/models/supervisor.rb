@@ -1,4 +1,5 @@
 class Supervisor < ActiveRecord::Base
+	validates :email, presence: true,  uniqueness: true
 	belongs_to	:school
 	has_many	:teachers
 
