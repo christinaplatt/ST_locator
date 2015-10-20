@@ -38,7 +38,7 @@ class SupervisorsController < ApplicationController
 
 	def account_update_params
 		params.require(:supervisor).permit(:fname, :lname) 
-		params.require(:supervisor).permit(:fname, :lname, :email,
+		params.require(:supervisor).permit(:fname, :lname, :password, :email,
 			:address1, :address2, :city, :state)
 
 	end
