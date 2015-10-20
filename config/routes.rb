@@ -6,8 +6,11 @@ Rails.application.routes.draw do
 
   resources :teachers
   resources :supervisors
+  resources :sessions
 
   get '/new' => 'home#new'
+  get '/show' => 'home#show'
+  get '/map' => 'home#map'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

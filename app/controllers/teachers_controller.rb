@@ -8,7 +8,12 @@ class TeachersController < ApplicationController
 	end
 	def create
 		@teacher = Teacher.create(teacher_params)
-		redirect_to edit_teacher_path @teacher
+
+		if @teacher.errors.present?
+			redirect_to edit_path(@teacher)
+		else
+			redirect_to show_path
+		end
 	end
 	def show
 		@teacher = Teacher.find(teacher_params)
@@ -41,7 +46,7 @@ class TeachersController < ApplicationController
 	private
 
 	def teacher_params
-		params.require(:teacher).permit(:fname, :lname, :email,
+		params.require(:teacher).permit(:fname, :lname, :password, :email,
 			:address1, :address2, :city, :state)
 	end
 end
