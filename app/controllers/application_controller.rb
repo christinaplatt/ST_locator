@@ -2,7 +2,10 @@ class ApplicationController < ActionController::Base
 
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :exception
+  before_action :authorize
+
+  protect_from_forgery
+  include ApplicationHelper
   helper_method :us_states
   helper_method :us_country
   def us_states
@@ -60,9 +63,24 @@ class ApplicationController < ActionController::Base
     ['WY', 'WY']
   ]
 end
-def us_country
-    [
-    ['US','US']
-    ]
+    def us_country
+        [
+            ['US','US']
+        ]
    
 	end
+
+    private
+
+    def authorize
+        if params['controller'] == 'home' && (params['action'] == 'new' || params['action'] == 'index')
+            return
+        elsif params['controller'] == 'sessions' && params['action'] == 'create'
+            return
+        elsif session[:teacher_id].present? || session[:supervisor_id].present?
+            return
+        else
+            redirect_to root_path
+        end
+    end
+end

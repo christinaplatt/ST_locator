@@ -1,4 +1,5 @@
 class Teacher < ActiveRecord::Base
+	validates :email, presence: true,  uniqueness: true
 	belongs_to	:school
 	belongs_to	:supervisor
 
