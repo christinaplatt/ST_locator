@@ -111,6 +111,9 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    passenger (5.0.20)
+      rack
+      rake (>= 0.8.1)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -214,6 +217,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   paperclip (~> 4.2)
+  passenger
   rails (= 4.2.4)
   rspec-rails (~> 3.0.0)
   sass-rails (~> 5.0)

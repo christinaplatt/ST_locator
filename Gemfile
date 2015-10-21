@@ -39,6 +39,8 @@ gem 'underscore-rails'
 # use for grabbing ruby and putting into javascript
 gem 'gon'
 
+gem 'passenger'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
