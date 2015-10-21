@@ -1,0 +1,23 @@
+Supervisor.create(fname:"Abe", address1:"2 Peryyville Rd", city:"Union", state:"NJ", zipcode:"08867")
+
+Supervisor.create(fname:"Bonnie", address1:"34 Maple Ave", city:"Flemington", state:"NJ", zipcode:"08822")
+
+Supervisor.create(fname:"Christine", address1:"12 Trafalgar Ct", city:"Lawrence", state:"NJ", zipcode:"08648")
+
+Supervisor.create(fname:"Debra", address1:"115 Douglas St", city:"Lambertville", state:"NJ", zipcode:"08530")
+
+Supervisor.create(fname:"Emma", address1:"26 Chadwick Ct", city:"Robbinsville Township", state:"NJ", zipcode:"08691")
+
+Supervisor.create(fname:"Francine", address1:"300 Cedar Swamp Rd", city:"Jackson", state:"NJ", zipcode:"08627")
+
+Supervisor.create(fname:"Glenna", address1:"18 Wyoming Dr", city:"Jackson", state:"NJ", zipcode:"08627")
+
+Supervisor.create(fname:"Helen", address1:"671 Longview Dr", city:"Toms River", state:"NJ", zipcode:"08753")
+
+Supervisor.create(fname:"Isabel", address1:"44 Prince Street", city:"Woodland Township", state:"NJ", zipcode:"08019")
+
+Supervisor.create(fname:"Jennifer", address1:"102 Woods Rd", city:"Absecon", state:"NJ", zipcode:"08201")
+
+Supervisor.create(fname:"Katherine", address1:"10 Morningside Dr", city:"Pennville Township", state:"NJ", zipcode:"08070")
+
+Supervisor.create(fname:"Lucy", address1:"2227 US 322", city:"Woolwich Township", state:"NJ", zipcode:"08085")

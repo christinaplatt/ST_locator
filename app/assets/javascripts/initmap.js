@@ -5,7 +5,7 @@
 {
     'use strict';
 
-    var gmap = google.maps;
+    var gmap = "google.maps";
 
     function Map()
     {

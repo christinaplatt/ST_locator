@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 	def index
 	end
+
 	def new
 		@user = Teacher.new
 	end
@@ -20,7 +21,6 @@ class HomeController < ApplicationController
 		  marker.lng supervisor.longitude
 	
 		  gon.lat_long_array = supervisor.full_address
-			end
 		end
-
+	end
 end
