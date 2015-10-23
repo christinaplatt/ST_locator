@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   get '/show' => 'home#show'
   get '/map' => 'home#map'
 
+#sue looked at this to avoid merge conflicts only.
+#no changes outside of comment
+
+
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
