@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
 
+#sue looked at this to avoid merge conflicts only.
+#no changes outside of comment
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   before_action :authorize

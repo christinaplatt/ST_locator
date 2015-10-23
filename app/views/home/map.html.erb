@@ -1,1 +1,21 @@
-<h1>map page</h1>
+<%= include_gon(:init => true) %>
+
+
+<% current_supervisor = Supervisor.new %>
+<% current_supervisor.latitude = 40 %>
+<% current_supervisor.longitude = -75 %>
+
+
+<%= current_supervisor.latitude %>
+
+
+
+<span id="map-info" data-lat= <%= current_supervisor.latitude %> data-lon= <%= current_supervisor.longitude %> ></span>
+
+
+
+
+<h1>Map</h1>
+<div style='width: 100%;'>
+  <div id="map" style='width: 100%; height: 400px;'></div>
+</div>
