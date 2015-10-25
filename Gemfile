@@ -39,7 +39,8 @@ gem 'underscore-rails'
 # use for grabbing ruby and putting into javascript
 gem 'gon'
 
-gem 'passenger'
+# gem 'passenger'
+# gem 'newrelic_rpm'
 
 
 # Use ActiveModel has_secure_password
