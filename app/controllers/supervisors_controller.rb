@@ -7,9 +7,12 @@ class SupervisorsController < ApplicationController
 		@supervisor = Supervisor.new
 	end
 	def create
+		
 		@supervisor = Supervisor.create(supervisor_params)
 		if @supervisor.save
-			redirect_to show_path
+			redirect_to map_path
+		else 
+			redirect_to new_path
 		end
 	end
 	def show
@@ -33,7 +36,8 @@ class SupervisorsController < ApplicationController
 
 	private
 		def supervisor_params
-		params.require(:supervisor).permit(:fname, :lname)
+		params.require(:supervisor).permit(:fname, :lname, :password, :email,
+			:address1, :address2, :city, :state)
 	end
 
 	def account_update_params
