@@ -19,18 +19,30 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jquery-turbolinks'
+#added this as a result of research into javascript in asset pipeline
+# see http://stackoverflow.com/questions/18770517/rails-4-how-to-use-document-ready-with-turbo-links
+
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise'
+# gem 'devise'
 gem 'cancan'
 gem 'paperclip', '~> 4.2'
 
 gem 'bootstrap-sass-rails', "~> 2.2.2.0"
 
-
+#SUE ADD use for obtaining geocode from addresses
 gem 'geocoder'
- 
+gem 'gmaps4rails', '~> 2.1.2'
+gem 'underscore-rails'
+# use for grabbing ruby and putting into javascript
+gem 'gon'
+
+# gem 'passenger'
+# gem 'newrelic_rpm'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

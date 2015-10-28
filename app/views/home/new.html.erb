@@ -1,0 +1,165 @@
+   <div class="myPanel">
+    <div="row">
+    <div class="col-md-3 col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading"> Create Teacher Account</div>
+        <div class="panel-body">
+          <span class="text-success"><div class="form">
+      <%= form_for Teacher.new do |f| %>   
+      <%=f.label :First_name %> 
+
+      <div class="box"> 
+        <%=f.text_field :fname %> 
+      </div>
+      <%=f.label :Last_name %>
+
+      <div class="box">
+        <%=f.text_field :lname%>
+      </div>
+      <%=f.label :email %> 
+
+      <div class="box">  
+        <%=f.text_field :email %> 
+      </div> 
+
+      <%=f.label :password %>
+      <div class="box">
+      <%=f.password_field :password %>
+      </div>
+
+      <%=f.label :cellphone %>
+
+      <div class="box">
+        <%=f.text_field :cellphone %>
+      </div>
+      <%=f.label :address_1 %>
+
+      <div class="box">
+        <%=f.text_field :address1 %>
+      </div>
+      <%=f.label :address_2 %>
+
+      <div class="box">
+        <%=f.text_field :address2 %>
+      </div>
+      <%=f.label :city %>
+
+      <div class="box">
+        <%=f.text_field :city %>
+      </div>
+      <%=f.label :state %>
+
+      <div class="box">
+        <%=f.select :state, options_for_select(us_states) %>
+      </div>
+      <%=f.label :country %>
+
+      <div class="box">
+        <%=f.select :country, options_for_select(us_country) %>
+      </div>
+
+      <%=f.label :grade %>
+
+      <div class="box">
+        <%=f.text_field :grade %>
+      </div>
+
+      <%=f.label :subject %>
+
+      <div class="box">
+        <%=f.text_field :subject %>
+      </div>
+
+
+
+      <%=f.submit :create %> 
+      <% end %>
+    </div></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading"> Create Supervisor Account</div>
+        <div class="panel-body"><span class="text success">
+          <div class="form">
+      <%= form_for Supervisor.new do |f| %>   
+      <%=f.label :First_name %> 
+
+      <div class="box"> 
+        <%=f.text_field :fname %> 
+      </div>
+      <%=f.label :Last_name %>
+
+      <div class="box">
+        <%=f.text_field :lname%>
+      </div>
+      <%=f.label :email %> 
+
+      <div class="box">  
+        <%=f.text_field :email %> 
+      </div> 
+
+      <%=f.label :password %>
+      <div class="box">
+      <%=f.password_field :password %>
+      </div>
+       
+      <%=f.label :cellphone %>
+
+      <div class="box">
+        <%=f.text_field :cellphone %>
+      </div>
+      <%=f.label :address_1 %>
+
+      <div class="box">
+        <%=f.text_field :address1 %>
+      </div>
+      <%=f.label :address_2 %>
+
+      <div class="box">
+        <%=f.text_field :address2 %>
+      </div>
+      <%=f.label :city %>
+
+      <div class="box">
+        <%=f.text_field :city %>
+      </div>
+      <div class="box">
+        <%=f.select :state, options_for_select(us_states) %>
+      </div>
+      <%=f.label :country %>
+
+      <div class="box">
+        <%=f.select :country, options_for_select(us_country) %>
+      </div>
+
+      <%=f.label :grades_taught %>
+      <div class="box">
+        <%=f.text_field :grades_taught %>
+      </div>
+
+        <%=f.label :years_experience %>
+        <div class="box">
+          <%=f.text_field :years_experience %>
+          </div>
+
+          <%=f.label :subject_taught %>
+          <div class="box">
+            <%=f.text_field  :subject_taught %>
+          </div>
+
+
+
+      <%=f.submit :create %> 
+
+  <% end %>
+
+
+</span>
+      </div>
+    </div>
+ </div>
+    
+    
+    
