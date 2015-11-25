@@ -18,9 +18,9 @@ class Supervisor < ActiveRecord::Base
 	def self.coordinate
 		latitude = Supervisor.pluck(:latitude)
 		longitude = Supervisor.pluck(:longitude)
-		coodinates = latitude.zip(longitude)
-		coordinates.delete_if{|array| array.include?("0.0")}
-		coodinates.delete_if{|array| array.include?(nil)}
+		coordinates = latitude.zip(longitude)
+		coordinates.delete_if{|array| array.include?(0.0)}
+		coordinates.delete_if{|array| array.include?(nil)}
 		coordinates
 	end
 

@@ -53,6 +53,7 @@ gem 'gon'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec'
   gem 'rspec-rails', '~> 3.0.0'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
